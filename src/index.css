@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Inter", "system-ui", "sans-serif";
+    --color-primary: #2563eb; /* Royal Blue untuk kesan profesional */
+    --color-dark-bg: #0f172a; /* Slate 900 */
+}
+
+body {
+    background-color: var(--color-dark-bg);
+    color: #f8fafc;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+}
