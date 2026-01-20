@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Linkedin, ArrowRight } from 'lucide-react';
+import { Mail, Phone, Linkedin, ArrowRight, Github } from 'lucide-react';
 import { personalInfo } from '../data/projects';
 
 const Hero = () => {
@@ -31,6 +31,10 @@ const Hero = () => {
                         <a href={`https://wa.me/${personalInfo.phone.replace('+', '')}`} className="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition">
                             <Phone size={18} className="text-blue-500" /> {personalInfo.phone}
                         </a>
+                        <a href={`https://${personalInfo.github}`} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition">
+                            <Github size={18} className="text-blue-500" /> GitHub Profile
+                        </a>
+
                     </div>
 
                     <div className="flex gap-4">
@@ -41,7 +45,7 @@ const Hero = () => {
                 </div>
 
                 {/* Visual Element (Placeholder for Profile Picture) */}
-                <div className="w-64 h-64 bg-gradient-to-br from-blue-600 to-purple-700 rounded-3xl rotate-3 flex items-center justify-center border-4 border-slate-800 shadow-2xl">
+                <div className="hidden md:flex w-64 h-64 bg-gradient-to-br from-blue-600 to-purple-700 rounded-3xl rotate-3 items-center justify-center border-4 border-slate-800 shadow-2xl">
                     <span className="text-7xl font-bold text-white -rotate-3">RN</span>
                 </div>
             </div>

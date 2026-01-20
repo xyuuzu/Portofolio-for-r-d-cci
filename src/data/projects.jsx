@@ -1,49 +1,89 @@
 import { Cpu, Activity, Trophy, BrainCircuit, Globe, FileText, Clock, CheckCircle2 } from "lucide-react";
-
+import { TbSitemap } from "react-icons/tb";
 export const projects = [
   {
     id: 1,
-    title: "Digital Twin Flood Simulation",
-    category: "Research Assistant",
-    status: "Completed",
+    title: "Digital Twin Simulasi Ruangan Server",
+    category: "Research Assistant | Web Dev",
+    status: "Prototype",
     icon: <Activity className="w-6 h-6 text-emerald-400" />,
-    description: "Mengembangkan model simulasi banjir berbasis konsep Digital Twin menggunakan HEC-RAS.",
-    fullContent: "Melakukan analisis data spasial dan topografi untuk memprediksi area terdampak banjir secara presisi. Proyek ini menggabungkan pemodelan lingkungan dengan teknologi Digital Twin untuk merumuskan strategi mitigasi teknis.",
-    tech: ["HEC-RAS", "Spatial Data Analysis", "Digital Twin", "Mitigation Strategy"],
-    image: "https://placehold.co/600x400/1e293b/ffffff?text=Digital+Twin+HEC-RAS"
+    description: "Sistem pemantauan lingkungan ruang server berbasis Digital Twin untuk deteksi anomali suhu dan kelembapan secara real-time.",
+    fullContent: "Mengembangkan replika digital (Digital Twin) dari ruang server . Sistem ini memvisualisasikan data suhu dan kelembapan secara real-time pada dashboard web 3D, memungkinkan tim IT untuk memprediksi *overheating* dan melakukan mitigasi preventif sebelum kerusakan perangkat keras terjadi.",
+    tech: [ "3D Visualization", "Real-time Monitoring", "Sensor Data Analysis"],
+    image: "/images/PRYK_DT_SR.png",
+    link: "https://digital-twin-server-room.vercel.app/"
   },
   {
     id: 2,
-    title: "AI Study Group - Lab AI",
-    category: "Research & Development",
-    status: "In Progress",
-    icon: <BrainCircuit className="w-6 h-6 text-purple-400" />,
-    description: "Mendalami konsep fundamental AI dan Machine Learning di Telkom University AI Laboratory.",
-    fullContent: "Aktif melakukan bedah studi kasus algoritma, diskusi kelompok mengenai ML, dan kolaborasi pemecahan masalah logika pemrograman kompleks bersama anggota laboratorium.",
-    tech: ["Artificial Intelligence", "Machine Learning", "Algorithm Logic", "Python/C#"],
-    image: "https://placehold.co/600x400/1e293b/ffffff?text=AI+Laboratory"
+    title: "Gacha System Logic Design",
+    category: "Business Process Modeling",
+    status: "Prototype",
+    icon: <TbSitemap className="w-6 h-6 text-pink-400" />,
+    description: "Perancangan arsitektur logika probabilitas untuk sistem undian acak (RNG) yang transparan dan efisien.",
+    fullContent: "Merancang proses bisnis 'To-Be' (BPMN 2.0) untuk fitur Gacha yang kompleks. Fokus pada validasi integritas transaksi mata uang user, eksekusi algoritma *Pseudo-Random Number Generator* (PRNG) yang adil, serta mekanisme *rollback* data inventory untuk mencegah duplikasi item dan meminimalisir *latency* pada saat beban server tinggi.",
+    tech: ["BPMN 2.0", "Probability Logic", "System Architecture", "Transaction Integrity"],
+    image: "/images/PRYK_BPMN1.png",
+    link: "https://drive.google.com/file/d/1KDEftzuo5CTgvf3uAsIbuoVncsJ9DC-d/view?usp=sharing"
   },
   {
     id: 3,
-    title: "National Digital Innovation Lead",
-    category: "Project Management",
+    title: "Website UMKM SukaDekat",
+    category: "Fullstack Developer | Product Lead",
     status: "Completed",
-    icon: <Trophy className="w-6 h-6 text-yellow-400" />,
-    description: "Juara 1 Lomba Inovasi Digital Tingkat Nasional 2024. Memimpin pengembangan ide solusi digital.",
-    fullContent: "Sebagai Team Leader, mengelola siklus hidup pengembangan ide dari brainstorming hingga presentasi final. Fokus pada koordinasi tim dan strategi eksekusi inovasi.",
-    tech: ["Agile", "Team Leadership", "Product Innovation", "Presentation"],
-    image: "https://placehold.co/600x400/1e293b/ffffff?text=National+Innovation+Award"
+    icon: <Globe className="w-6 h-6 text-blue-400" />,
+    description: "Platform e-commerce untuk digitalisasi UMKM dengan tema unik yaitu tema Sosial Media, dikembangkan sebagai inovasi pada ajang Multimedia in Action 2025 (UPNVJ).",
+    fullContent: "Menginisiasi dan memimpin pengembangan platform agregator UMKM 'SukaDekat' untuk kompetisi Multimedia in Action 2025 di UPN Veteran Jakarta. Bertanggung jawab penuh atas arsitektur backend yang scalable dan antarmuka frontend yang intuitif. Platform ini dirancang untuk memecahkan masalah visibilitas pasar bagi UMKM lokal melalui fitur geolokasi dan manajemen inventaris yang terintegrasi.",
+    tech: ["Fullstack Development", "Product Management", "Competition Project", "Scalable Architecture"],
+    image: "/images/PRYK_WEB_SKDT.png",
+    link: "https://suka-dekat-mia-2025.vercel.app/"
   },
   {
     id: 4,
-    title: "Website Pariwisata",
-    category: "Strategic Partnership",
+    title: "Minangkabau Fashion Virtual",
+    category: "Project Manager | VR Implementation",
+    status: "Completed",
+    icon: <Trophy className="w-6 h-6 text-yellow-400" />,
+    description: "Eksplorasi budaya melalui Virtual Reality, menghadirkan pengalaman fashion show Minangkabau yang imersif.",
+    fullContent: "Mengelola proyek pengembangan aplikasi VR untuk pelestarian budaya. Mengoordinasikan tim 3D artist dan developer untuk menciptakan lingkungan virtual yang realistis. Proyek ini memenangkan penghargaan inovasi berkat pendekatan modern dalam memperkenalkan wastra nusantara kepada audiens global tanpa batasan geografis.",
+    tech: ["Virtual Reality", "Cultural Tech", "Project Coordination", "Immersive Experience"],
+    image: "/images/PRYK_VR.jpeg",
+    link: ""
+  },
+  {
+    id: 5,
+    title: "Website Pariwisata Daerah",
+    category: "Gov-Tech Partnership | Web Dev",
     status: "Completed",
     icon: <Globe className="w-6 h-6 text-blue-400" />,
-    description: "Kerjasama Dinas Pariwisata Kabupaten untuk digitalisasi promosi destinasi wisata.",
-    fullContent: "Menjalin komunikasi teknis dan koordinasi antar stakeholder (Pemerintah & Tim Pengembang) untuk memastikan kebutuhan promosi terpenuhi melalui solusi teknologi.",
-    tech: ["Stakeholder Mgmt", "Liaison", "Web Development", "Public Sector"],
-    image: "https://placehold.co/600x400/1e293b/ffffff?text=Tourism+Liaison"
+    description: "Portal informasi wisata terintegrasi hasil kolaborasi strategis dengan Dinas Pariwisata Kabupaten.",
+    fullContent: "Bertindak sebagai *Technical Liaison* dan Developer dalam proyek digitalisasi pariwisata daerah. Menerjemahkan kebutuhan birokrasi menjadi spesifikasi teknis yang solutif. Website ini kini menjadi pusat informasi utama destinasi wisata, kalender event, dan akomodasi, meningkatkan aksesibilitas informasi bagi wisatawan domestik maupun mancanegara.",
+    tech: ["Government Relations", "Stakeholder Management", "Web Accessibility", "Public Sector"],
+    image: "/images/PYRK_WEB_PRWST.jpeg",
+    link: "https://github.com/xyuuzu/Web-Pariwisata"
+  },
+  {
+    id: 6,
+    title: "Digital Twin Flood Simulation",
+    category: "Research Assistant | Environmental Data",
+    status: "In Progress",
+    icon: <Activity className="w-6 h-6 text-emerald-400" />,
+    description: "Simulasi hidrodinamika banjir berbasis data topografi presisi menggunakan HEC-RAS dan Digital Twin.",
+    fullContent: "Melakukan riset mendalam mengenai prediksi bencana banjir dengan menggabungkan pemodelan hidrologi HEC-RAS dan visualisasi Digital Twin. Fokus pada analisis data spasial curah hujan dan elevasi tanah untuk menghasilkan peta risiko banjir yang akurat, guna mendukung pengambilan keputusan mitigasi bencana oleh pemerintah daerah.",
+    tech: ["HEC-RAS", "Spatial Analysis (GIS)", "Disaster Mitigation", "Hydrology Modeling"],
+    image: "https://placehold.co/600x400/1e293b/ffffff?text=Digital+Twin+HEC-RAS",
+    link: ""
+  },
+  {
+    id: 7,
+    title: "AI Implementation: Smart Detection",
+    category: "R&D | Artificial Intelligence",
+    status: "In Progress",
+    icon: <BrainCircuit className="w-6 h-6 text-purple-400" />,
+    description: "Pengembangan model Computer Vision untuk deteksi objek spesifik di Telkom University AI Laboratory.",
+    fullContent: "Melakukan eksperimen dan pelatihan model *Machine Learning* menggunakan Python dan TensorFlow. Riset berfokus pada optimasi akurasi algoritma pengenalan pola untuk studi kasus keamanan atau automasi industri. Aktif berkolaborasi dalam bedah jurnal ilmiah dan implementasi algoritma state-of-the-art bersama tim riset laboratorium.",
+    tech: ["Computer Vision", "TensorFlow/PyTorch", "Model Training", "Algorithm Optimization"],
+    image: "https://placehold.co/600x400/1e293b/ffffff?text=AI+Laboratory",
+    link: ""
   }
 ];
 
@@ -53,5 +93,6 @@ export const personalInfo = {
   email: "rofif.n17@gmail.com",
   phone: "+6282284059485",
   linkedin: "linkedin.com/in/rofiif-nabil-syafaqoh-970953270/",
+  github: "github.com/xyuuzu",
   summary: "Mahasiswa S1 Sistem Informasi dengan minat kuat pada riset teknologi, pengembangan algoritma, dan inovasi produk. Berpengalaman dalam QA industri dan aktif mendalami AI. Terampil dalam pemrograman C#, pemodelan sistem, dan manajemen proyek."
 };
