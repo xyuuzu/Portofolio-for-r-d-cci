@@ -1,36 +1,48 @@
 import React from 'react';
-import { ArrowRight, Download } from 'lucide-react';
+import { Mail, Phone, Linkedin, ArrowRight } from 'lucide-react';
+import { personalInfo } from '../data/projects';
 
 const Hero = () => {
     return (
-        <section className="pt-36 pb-20 px-6">
-            <div className="max-w-4xl mx-auto text-center">
-                {/* Tagline diubah untuk PM */}
-                <span className="inline-block py-1 px-3 rounded-full bg-indigo-900/30 border border-indigo-800 text-indigo-400 text-sm font-semibold mb-6">
-          Aspiring IT Project Manager
-        </span>
+        <section className="pt-36 pb-20 px-6 max-w-5xl mx-auto">
+            <div className="flex flex-col md:flex-row gap-12 items-center">
+                <div className="flex-1 text-left">
+          <span className="text-blue-500 font-mono font-medium tracking-widest uppercase text-sm mb-4 block">
+            Research & Development Portofolio
+          </span>
+                    <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                        {personalInfo.name}
+                    </h1>
+                    <p className="text-xl text-slate-300 mb-6 font-medium border-l-4 border-blue-600 pl-4">
+                        {personalInfo.role}
+                    </p>
+                    <p className="text-slate-400 text-lg mb-8 leading-relaxed italic">
+                        "{personalInfo.summary}"
+                    </p>
 
-                <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-                    Rofiif Nabil Syafaqoh
-                </h1>
+                    {/* Kontak Langsung */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                        <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition">
+                            <Mail size={18} className="text-blue-500" /> {personalInfo.email}
+                        </a>
+                        <a href={`https://${personalInfo.linkedin}`} target="_blank" className="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition">
+                            <Linkedin size={18} className="text-blue-500" /> LinkedIn Profile
+                        </a>
+                        <a href={`https://wa.me/${personalInfo.phone.replace('+', '')}`} className="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition">
+                            <Phone size={18} className="text-blue-500" /> {personalInfo.phone}
+                        </a>
+                    </div>
 
-                <p className="text-xl md:text-2xl text-slate-300 mb-6 font-light">
-                    Driving Innovation through <span className="text-blue-400 font-semibold">Strategic Management</span> & R&D
-                </p>
+                    <div className="flex gap-4">
+                        <a href="#projects" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-bold transition flex items-center gap-2">
+                            Explore Research <ArrowRight size={18}/>
+                        </a>
+                    </div>
+                </div>
 
-                <p className="text-lg text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                    Mahasiswa Sistem Informasi dengan pengalaman memimpin tim (Team Leader) dan pengelolaan proyek teknis.
-                    Fokus pada manajemen *timeline*, koordinasi *stakeholder*, dan pengembangan produk berbasis riset.
-                </p>
-
-                <div className="flex flex-col md:flex-row justify-center gap-4">
-                    <a href="#projects" className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition flex items-center justify-center gap-2">
-                        Lihat Portfolio Project <ArrowRight size={18} />
-                    </a>
-                    {/* Pastikan file CV sudah ada di folder public */}
-                    <a href="/cv-rofiif.pdf" target="_blank" className="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-medium transition border border-slate-700 flex items-center justify-center gap-2">
-                        Download CV <Download size={18} />
-                    </a>
+                {/* Visual Element (Placeholder for Profile Picture) */}
+                <div className="w-64 h-64 bg-gradient-to-br from-blue-600 to-purple-700 rounded-3xl rotate-3 flex items-center justify-center border-4 border-slate-800 shadow-2xl">
+                    <span className="text-7xl font-bold text-white -rotate-3">RN</span>
                 </div>
             </div>
         </section>

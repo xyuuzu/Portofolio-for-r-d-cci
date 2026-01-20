@@ -3,9 +3,9 @@ import { Search, PenTool, Code, CheckCircle } from 'lucide-react';
 
 const ResearchProcess = () => {
     const steps = [
-        { icon: <Search/>, title: "Problem Analysis", desc: "Mendefinisikan masalah inti & variabel." },
-        { icon: <PenTool/>, title: "Hypothesis & Design", desc: "Merancang model solusi & flowchart." },
-        { icon: <Code/>, title: "Prototyping", desc: "Implementasi kode & integrasi hardware." },
+        { icon: <Search/>, title: "Problem Analysis", desc: "Mendefinisikan masalah & variabel." },
+        { icon: <PenTool/>, title: "Hypothesis & Design", desc: "Merancang model solusi ." },
+        { icon: <Code/>, title: "Prototyping", desc: "Implementasi & integrasi ." },
         { icon: <CheckCircle/>, title: "Testing & Iteration", desc: "Validasi hasil & optimasi performa." },
     ];
 

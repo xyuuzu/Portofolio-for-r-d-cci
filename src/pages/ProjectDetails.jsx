@@ -21,7 +21,6 @@ const ProjectDetails = () => {
 
 
                 <div className="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden">
-                    {/* Header Image Simulation */}
 
                     <div className="h-64 md:h-80 bg-slate-800 w-full overflow-hidden relative">
                         <img src={project.image} alt={project.title} className="w-full h-full object-cover opacity-60" />

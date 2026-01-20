@@ -1,48 +1,57 @@
-import { Cpu, Activity, Trophy, Briefcase, Clock, CheckCircle2 } from "lucide-react";
+import { Cpu, Activity, Trophy, BrainCircuit, Globe, FileText, Clock, CheckCircle2 } from "lucide-react";
 
 export const projects = [
   {
     id: 1,
-    title: "Smart Photobooth Automation",
-    category: "Hardware Product Manager",
-    status: "In Progress", // <-- Status Baru
-    icon: <Cpu className="w-6 h-6 text-blue-400" />,
-    description: "Memimpin pengembangan produk photobooth otomatis dari fase konsep hingga prototyping.",
-    fullContent: "Bertanggung jawab atas timeline pengembangan hardware dan integrasi software. Saat ini dalam tahap pengujian stabilitas sensor outdoor dan finalisasi desain mekanik hidrolik.",
-    tech: ["Product Management", "R&D Planning", "Timeline Monitoring"],
-    image: "https://placehold.co/600x400/1e293b/ffffff?text=Smart+Photobooth"
+    title: "Digital Twin Flood Simulation",
+    category: "Research Assistant",
+    status: "Completed",
+    icon: <Activity className="w-6 h-6 text-emerald-400" />,
+    description: "Mengembangkan model simulasi banjir berbasis konsep Digital Twin menggunakan HEC-RAS.",
+    fullContent: "Melakukan analisis data spasial dan topografi untuk memprediksi area terdampak banjir secara presisi. Proyek ini menggabungkan pemodelan lingkungan dengan teknologi Digital Twin untuk merumuskan strategi mitigasi teknis.",
+    tech: ["HEC-RAS", "Spatial Data Analysis", "Digital Twin", "Mitigation Strategy"],
+    image: "https://placehold.co/600x400/1e293b/ffffff?text=Digital+Twin+HEC-RAS"
   },
   {
     id: 2,
-    title: "Sustainable Fashion Business",
-    category: "Business Project Lead",
-    status: "Completed", // <-- Status Baru
-    icon: <Trophy className="w-6 h-6 text-yellow-400" />,
-    description: "Juara 1 Business Plan. Mengelola tim lintas fungsi untuk merancang model bisnis sosial.",
-    fullContent: "Sebagai Team Leader, saya mengoordinasikan riset pasar, strategi keuangan, dan presentasi. Berhasil meyakinkan juri melalui data analitis dan roadmap bisnis yang terukur.",
-    tech: ["Team Leadership", "Strategic Planning", "Stakeholder Mgmt"],
-    image: "https://placehold.co/600x400/1e293b/ffffff?text=Business+Plan+Win"
+    title: "AI Study Group - Lab AI",
+    category: "Research & Development",
+    status: "In Progress",
+    icon: <BrainCircuit className="w-6 h-6 text-purple-400" />,
+    description: "Mendalami konsep fundamental AI dan Machine Learning di Telkom University AI Laboratory.",
+    fullContent: "Aktif melakukan bedah studi kasus algoritma, diskusi kelompok mengenai ML, dan kolaborasi pemecahan masalah logika pemrograman kompleks bersama anggota laboratorium.",
+    tech: ["Artificial Intelligence", "Machine Learning", "Algorithm Logic", "Python/C#"],
+    image: "https://placehold.co/600x400/1e293b/ffffff?text=AI+Laboratory"
   },
   {
     id: 3,
-    title: "Flood Mitigation Analysis",
-    category: "Research Coordinator",
+    title: "National Digital Innovation Lead",
+    category: "Project Management",
     status: "Completed",
-    icon: <Activity className="w-6 h-6 text-emerald-400" />,
-    description: "Mengoordinasikan studi mitigasi bencana menggunakan simulasi HEC-RAS.",
-    fullContent: "Mengelola pengumpulan data topografi dan memastikan akurasi model simulasi. Hasil riset digunakan sebagai rekomendasi strategis untuk penanggulangan banjir di Payakumbuh.",
-    tech: ["Research Mgmt", "Data Analysis", "Reporting"],
-    image: "https://placehold.co/600x400/1e293b/ffffff?text=HEC-RAS+Simulation"
+    icon: <Trophy className="w-6 h-6 text-yellow-400" />,
+    description: "Juara 1 Lomba Inovasi Digital Tingkat Nasional 2024. Memimpin pengembangan ide solusi digital.",
+    fullContent: "Sebagai Team Leader, mengelola siklus hidup pengembangan ide dari brainstorming hingga presentasi final. Fokus pada koordinasi tim dan strategi eksekusi inovasi.",
+    tech: ["Agile", "Team Leadership", "Product Innovation", "Presentation"],
+    image: "https://placehold.co/600x400/1e293b/ffffff?text=National+Innovation+Award"
   },
   {
     id: 4,
-    title: "Tourism Gov Partnership",
-    category: "Liaison Officer & Dev",
+    title: "Website Pariwisata",
+    category: "Strategic Partnership",
     status: "Completed",
-    icon: <Briefcase className="w-6 h-6 text-purple-400" />,
-    description: "Menjembatani komunikasi teknis antara tim developer dan Dinas Pariwisata.",
-    fullContent: "Bertindak sebagai penanggung jawab komunikasi (Liaison), menerjemahkan kebutuhan klien pemerintahan menjadi spesifikasi teknis yang dapat dieksekusi oleh tim developer.",
-    tech: ["Client Relations", "Requirement Gathering", "Agile"],
-    image: "https://placehold.co/600x400/1e293b/ffffff?text=Gov+Project"
+    icon: <Globe className="w-6 h-6 text-blue-400" />,
+    description: "Kerjasama Dinas Pariwisata Kabupaten untuk digitalisasi promosi destinasi wisata.",
+    fullContent: "Menjalin komunikasi teknis dan koordinasi antar stakeholder (Pemerintah & Tim Pengembang) untuk memastikan kebutuhan promosi terpenuhi melalui solusi teknologi.",
+    tech: ["Stakeholder Mgmt", "Liaison", "Web Development", "Public Sector"],
+    image: "https://placehold.co/600x400/1e293b/ffffff?text=Tourism+Liaison"
   }
 ];
+
+export const personalInfo = {
+  name: "Rofiif Nabil Syafaqoh",
+  role: "Sistem Informasi | Telkom University",
+  email: "rofif.n17@gmail.com",
+  phone: "+6282284059485",
+  linkedin: "linkedin.com/in/rofiif-nabil-syafaqoh-970953270/",
+  summary: "Mahasiswa S1 Sistem Informasi dengan minat kuat pada riset teknologi, pengembangan algoritma, dan inovasi produk. Berpengalaman dalam QA industri dan aktif mendalami AI. Terampil dalam pemrograman C#, pemodelan sistem, dan manajemen proyek."
+};

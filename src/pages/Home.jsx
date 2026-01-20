@@ -1,7 +1,8 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import TechStack from '../components/TechStack';
-import Experience from '../components/Experience'; // <-- Import komponen baru
+import Experience from '../components/Experience';
+import TechMarquee from '../components/TechMarquee';
 import ResearchProcess from '../components/ResearchProcess';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/projects';
@@ -11,7 +12,8 @@ const Home = () => {
         <>
             <Hero />
             <TechStack />
-            <Experience /> {/* <-- Tampilkan di sini agar sesuai alur "Info Jelas" */}
+            <TechMarquee />
+            <Experience />
             <ResearchProcess />
 
             <section id="projects" className="py-20 px-6">

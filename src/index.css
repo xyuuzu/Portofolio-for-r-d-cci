@@ -12,3 +12,26 @@ body {
     font-family: var(--font-sans);
     scroll-behavior: smooth;
 }
+/* src/index.css */
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        /* UBAH DARI -100% MENJADI -50% */
+        /* Ini trik agar looping terlihat menyambung sempurna */
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    /* Durasi diperlambat sedikit (40s -> 50s) agar elegan untuk icon besar */
+    animation: marquee 50s linear infinite;
+    /* Pastikan lebar konten fit agar perhitungan % akurat */
+    width: max-content;
+}
+
+.group:hover .animate-marquee {
+    animation-play-state: paused;
+}
