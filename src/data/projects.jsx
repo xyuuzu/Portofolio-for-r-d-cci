@@ -75,14 +75,14 @@ export const projects = [
   },
   {
     id: 7,
-    title: "AI Implementation: Smart Detection",
-    category: "R&D | Artificial Intelligence",
+    title: "AI Project: Hoax Buster Indonesia",
+    category: "R&D | Natural Language Processing",
     status: "In Progress",
     icon: <BrainCircuit className="w-6 h-6 text-purple-400" />,
-    description: "Pengembangan model Computer Vision untuk deteksi objek spesifik di Telkom University AI Laboratory.",
-    fullContent: "Melakukan eksperimen dan pelatihan model *Machine Learning* menggunakan Python dan TensorFlow. Riset berfokus pada optimasi akurasi algoritma pengenalan pola untuk studi kasus keamanan atau automasi industri. Aktif berkolaborasi dalam bedah jurnal ilmiah dan implementasi algoritma state-of-the-art bersama tim riset laboratorium.",
-    tech: ["Computer Vision", "TensorFlow/PyTorch", "Model Training", "Algorithm Optimization"],
-    image: "https://placehold.co/600x400/1e293b/ffffff?text=AI+Laboratory",
+    description: "Sistem deteksi berita palsu menggunakan algoritma SVM untuk klasifikasi dan Gemini API untuk analisis konteks, mendukung input teks serta PDF.",
+    fullContent: "Mengembangkan sistem verifikasi berita otomatis yang menggabungkan *Traditional Machine Learning* (Support Vector Machine) sebagai model utama untuk klasifikasi cepat dan akurat, serta *Generative AI* (Google Gemini) sebagai model sekunder untuk memberikan penjelasan kontekstual (Explainable AI). Proyek ini mencakup pembangunan *pipeline* NLP lengkap (preprocessing Sastrawi & TF-IDF), fitur ekstraksi teks dari dokumen PDF, dan visualisasi hasil melalui aplikasi web interaktif.",
+    tech: ["Scikit-Learn (SVM)", "Natural Language Processing", "Gemini API", "Streamlit", "Python"],
+    image: "https://placehold.co/600x400/1e293b/ffffff?text=Hoax+Buster+AI",
     link: ""
   }
 ];
