@@ -12,7 +12,7 @@ const ResearchProcess = () => {
     return (
         <section className="py-20 px-6 border-b border-slate-800">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-2xl font-bold text-white mb-10 text-center">My R&D Workflow</h2>
+                <h2 className="text-2xl font-bold text-white mb-10 text-center">My Workflow</h2>
                 <div className="grid md:grid-cols-4 gap-6">
                     {steps.map((step, idx) => (
                         <div key={idx} className="text-center relative">

@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="flex flex-col md:flex-row gap-12 items-center">
                 <div className="flex-1 text-left">
           <span className="text-blue-500 font-mono font-medium tracking-widest uppercase text-sm mb-4 block">
-            Research & Development Portofolio
+            My Portofolio
           </span>
                     <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
                         {personalInfo.name}
